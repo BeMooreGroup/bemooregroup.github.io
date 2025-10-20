@@ -64,6 +64,13 @@
         font-size: 1.1rem;
         box-shadow: 0 2px 12px #0002;
       }
+      .cta {
+        display: inline-flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
       .contact-btn {
         display: inline-block;
         background: linear-gradient(
@@ -90,6 +97,24 @@
           #d72631 100%
         );
         color: #d72631;
+      }
+      .menu-btn {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.9);
+        color: #009b3a;
+        font-weight: 800;
+        padding: 12px 24px;
+        border-radius: 10px;
+        font-size: 1.05rem;
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s, transform 0.1s;
+        box-shadow: 0 2px 8px #0002;
+        border: 2px solid #009b3a22;
+      }
+      .menu-btn:hover {
+        background: #ffffff;
+        color: #d72631;
+        transform: translateY(-1px);
       }
       header {
         width: 100%;
@@ -130,6 +155,7 @@
         background: rgba(255, 255, 255, 0.2);
         border-top: 2px solid #fed100;
       }
+      /* (HTML menu styles removed; using PDF link only) */
     </style>
   </head>
   <body>
@@ -140,11 +166,21 @@
       <div class="product-name">Be Moore:<br />Vegan Jamaican</div>
       <div class="tagline">Vegan Food with a Jamaican Flair</div>
       <div class="desc">Simple. Delicious. Plant Powered Goodness.</div>
-      <a
-        class="contact-btn"
-        href="mailto:support@bemooregroup.com?subject=Be%20Moore%20Vegan%20Jamaican%20Inquiry"
-        >Contact Us</a
-      >
+      <div class="cta">
+        <a
+          class="contact-btn"
+          href="mailto:support@bemooregroup.com?subject=Be%20Moore%20Vegan%20Jamaican%20Inquiry"
+          >Contact Us</a
+        >
+        <a
+          class="menu-btn"
+          href="./Be%20Moore%20Menu.pdf"
+          target="_blank"
+          rel="noopener"
+          >View Menu (PDF)</a
+        >
+      </div>
+      <!-- (Inline HTML menu removed; using PDF link above) -->
     </main>
     <footer>
       &copy; <span id="year"></span> Be Moore Group. All rights reserved.
